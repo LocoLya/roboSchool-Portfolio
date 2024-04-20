@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sprite -->
+  <svg style='display: none;'>
+    <symbol id="button-left" viewBox="0 0 40 40">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33317 20C3.33317 29.2 10.8165 36.6666 19.9998 36.6666L20.4661 36.6602C29.4508 36.413 36.6665 29.044 36.6665 20C36.6665 10.8166 29.1998 3.33331 19.9998 3.33331C10.8165 3.33331 3.33317 10.8166 3.33317 20ZM23.2998 13.3333C23.7832 13.8333 23.7832 14.6166 23.2832 15.1L18.3665 20L23.2832 24.9C23.7832 25.3833 23.7832 26.1833 23.2998 26.6666C22.7998 27.1666 22.0165 27.1666 21.5332 26.6666L15.7165 20.8833C15.4832 20.65 15.3498 20.3333 15.3498 20C15.3498 19.6666 15.4832 19.35 15.7165 19.1166L21.5332 13.3333C21.7665 13.0833 22.0832 12.9666 22.3998 12.9666C22.7332 12.9666 23.0498 13.0833 23.2998 13.3333Z"/>
+    </symbol>
+    <symbol id="button-right" viewBox="0 0 40 40">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M36.6668 20C36.6668 29.2 29.1835 36.6666 20.0002 36.6666L19.5339 36.6602C10.5492 36.413 3.3335 29.044 3.3335 20C3.3335 10.8166 10.8002 3.33331 20.0002 3.33331C29.1835 3.33331 36.6668 10.8166 36.6668 20ZM16.7002 13.3333C16.2168 13.8333 16.2168 14.6166 16.7168 15.1L21.6335 20L16.7168 24.9C16.2168 25.3833 16.2168 26.1833 16.7002 26.6666C17.2002 27.1666 17.9835 27.1666 18.4668 26.6666L24.2835 20.8833C24.5168 20.65 24.6502 20.3333 24.6502 20C24.6502 19.6666 24.5168 19.35 24.2835 19.1166L18.4668 13.3333C18.2335 13.0833 17.9168 12.9666 17.6002 12.9666C17.2668 12.9666 16.9502 13.0833 16.7002 13.3333Z"/>
+    </symbol>
+    <symbol id="call" viewBox="0 0 20 20">
+      <path d="M16.1668 12.3797C15.4951 12.2352 14.9637 12.5471 14.4932 12.8194C14.0114 13.1001 13.0951 13.8434 12.57 13.6531C9.88108 12.546 7.35213 10.1925 6.25739 7.49286C6.06444 6.95647 6.80424 6.0344 7.08283 5.54686C7.35316 5.07492 7.65858 4.53852 7.51928 3.86178C7.3934 3.25366 5.76522 1.18188 5.18947 0.615332C4.80977 0.241101 4.42078 0.0352739 4.02147 0.00200893C2.5202 -0.0624419 0.843516 1.94073 0.549452 2.41996C-0.187255 3.44181 -0.183128 4.80152 0.561834 6.45021C2.35717 10.8786 9.14747 17.5618 13.5925 19.4246C14.4128 19.8082 15.1629 20.0005 15.8366 20.0005C16.496 20.0005 17.0831 19.8165 17.5876 19.4516C17.9684 19.2323 20.0536 17.4724 19.9989 15.9307C19.9659 15.5378 19.7606 15.1448 19.3912 14.7644C18.8289 14.1833 16.7704 12.5065 16.1668 12.3797Z"/>
+    </symbol>
+  </svg>
+
+	<header class="header">
+		<div class="max-container">
+      <div class="header__inner">
+        <a href="#" class="header__logo">
+          ROBO.SCHOOL  
+        </a>
+        <div class="mobile">
+          <a href="tel:+78000001122" class="mobile__btn">
+            <svg width="20" height="20" class="mobile__icon" >
+              <use xlink:href='#call'>
+            </svg>
+            
+          </a>
+          <button class="menu__btn">
+              <span class="burger__line"></span>
+            </button>
+        </div>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                О школе
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                Тренеры
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                Стоимость
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:+78000001122" class="header__phone">
+          +7 800 000 11 22
+        </a>
+        
+      </div>
+    </div>
+	</header>
+  <section class="hero">
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero__left">
+          <h1 class="hero__title">
+            ROBO SCHOOL
+          </h1>
+          <p class="hero__description">
+            Курсы повышения квалификации по робототехнике для педагогов начальной школы
+          </p>
+          <a href="#" class="hero__button">
+            Записаться на курс
+          </a>
+        </div>
+        <div class="hero__right">
+          <img src="img/hero-img.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="container">
+      <div class="about__inner">
+        <h3 class="about__title">
+          <span>Robo School</span> —учреждение для формирования кадрового педагогического резерва в сфере робототехники и программирования
+        </h3>
+        <div class="about__block">
+          <div class="about__item">
+            <p class="about__item-number">10</p>
+            <p class="about__item-description">УМК по различным направлениям по робототехнике</p>
+          </div>
+          <div class="about__item">
+            <p class="about__item-number">20</p>
+            <p class="about__item-description">Школ, в которых запущена робототехника</p>
+          </div>
+          <div class="about__item">
+            <p class="about__item-number">100</p>
+            <p class="about__item-description">Педагогов прошедших курсы повышения квалификации</p>
+          </div>
+          <div class="about__item">
+            <p class="about__item-number">10 000</p>
+            <p class="about__item-description">Обученных детей на базе собственных центров</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="perspective">
+    <div class="container">
+      <div class="perspective__inner">
+        <div class="perspective__title">Что вы получите после курса</div>
+        <div class="perspective__block">
+          <div class="perspective__item">
+            <p class="perspective__subtitle">Удостоверение</p>
+            <p class="perspective__description">Дающее право преподавать робототехнику для детей 6-12 лет в образовательных учреждениях</p>
+          </div>
+          <div class="perspective__item">
+            <p class="perspective__subtitle">Знания</p>
+            <p class="perspective__description">По основам разработки учебно-методических комплексов
+            по робототехнике и программированию</p>
+          </div>
+          <div class="perspective__item">
+            <p class="perspective__subtitle">
+              Практику
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button">
+                  <img src="img/info-logo.png" alt="">
+                </button>
+                <span class="tooltip-text">
+                  При наличии свободных мест
+                </span>
+              </span>
+            </p>
+            <p class="perspective__description">Возможность пройти практику по преподаванию робототехники на базе R:ED LAB (в оффлайн или онлайн формате)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="coaches">
+    <div class="container">
+      <div class="coaches__inner">
+        <h2 class="coaches__title">
+          Профессиональные тренеры
+        </h2>
+        <div class="coaches__block">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/coach-1.jpg" alt="" class="coach__img">
+                <h3 class="coach__item-title">
+                  Ирина Лайм
+                </h3>
+                <p class="coach__item-job">
+                  преподаватель по робототехнике
+                </p>
+                <div class="coach__triger">
+                  <p class="coach__triger-title">
+                    Подробнее
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/coach-2.jpg" alt="" class="coach__img">
+                <h3 class="coach__item-title">
+                  Марина Орлова
+                </h3>
+                <p class="coach__item-job">
+                  преподаватель по робототехнике
+                </p>
+                <div class="coach__triger">
+                  <p class="coach__triger-title">
+                    Подробнее
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/coach-3.jpg" alt="" class="coach__img">
+                <h3 class="coach__item-title">
+                  Максим Петров
+                </h3>
+                <p class="coach__item-job">
+                  преподаватель по программированию
+                </p>
+                <div class="coach__triger">
+                  <p class="coach__triger-title">
+                    Подробнее
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/coach-5.jpg" alt="" class="coach__img">
+                <h3 class="coach__item-title">
+                  Лиза Весенняя
+                </h3>
+                <p class="coach__item-job">
+                  преподаватель по программированию
+                </p>
+                <div class="coach__triger">
+                  <p class="coach__triger-title">
+                    Подробнее
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/coach-4.jpg" alt="" class="coach__img">
+                <h3 class="coach__item-title">
+                  Константин Назаров
+                </h3>
+                <p class="coach__item-job">
+                  преподаватель по робототехнике
+                </p>
+                <div class="coach__triger">
+                  <p class="coach__triger-title">
+                    Подробнее
+                  </p>
+                </div>
+              </div>
+              </div>
+            <div class="swiper-button-next">
+              <svg class="swiper__icon">
+                <use xlink:href='#button-right'>
+              </svg>
+            </div>
+            <div class="swiper-button-prev">
+              <svg class="swiper__icon">
+                <use xlink:href='#button-left'>
+              </svg>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="package">
+    <div class="container">
+      <div class="package__inner">
+        <h1 class="package__title">
+          Выберите нужный пакет
+        </h1>
+        <div class="package__list">
+          <div class="package__item">
+            <h3 class="package__item-head">
+              – PRO –
+            </h3>
+            <div class="package__item-text">
+              <h3 class="package__item-price">20.000₽</h3>
+              <p class="package__card-descr">УМК по робототехнике и программированию</p>
+            </div>
+            <button class="package__item-button">
+              Оставить заявку
+            </button>
+          </div>
+          <div class="package__item">
+            <h3 class="package__item-head">
+              – ROBO –
+            </h3>
+            <div class="package__item-text">
+              <h3 class="package__item-price">15.000₽</h3>
+              <p class="package__card-descr">УМК по робототехнике</p>
+            </div>
+            <button class="package__item-button">
+              Оставить заявку
+            </button>
+          </div>
+          <div class="package__item">
+            <h3 class="package__item-head">
+              – PROG –
+            </h3>
+            <div class="package__item-text">
+              <h3 class="package__item-price">10.000₽</h3>
+              <p class="package__card-descr">УМК по программированию</p>
+            </div>
+            <button class="package__item-button">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="forms">
+    <div class="container forms__container">
+      <div class="forms__inner">
+        <div class="forms__text">
+          <h3 class="forms__text-title">
+            Запишитесь на курс со скидкой 10%
+          </h3>
+          <p class="forms__text-description">
+            Акция действительна до 10 марта 2022 года
+          </p>
+        </div>
+        <form action="" class="forms__form">
+          <input type="text" class="forms__form-name" placeholder="Имя">
+          <input type="tel" class="forms__form-tel" placeholder="Телефон">
+          <input type="email" class="forms__form-email" placeholder="E-mail">
+          <button class="forms__form-btn">
+            Оформить заявку
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="max-container">
+      <div class="footer__inner">
+        <div class="footer__text">
+          <a href="#" class="footer__logo">
+          ROBO.SCHOOL
+          </a>
+          <a href="tel:+78000001122" class="footer__phone">
+          +7 800 000 11 22
+          </a>
+        </div>
+        <div class="footer__subtitle">
+          © ROBO.SCHOOL
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
