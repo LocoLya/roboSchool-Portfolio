@@ -19,9 +19,13 @@ a{
 }
 
 .container{
-	max-width: 1160px;
+  max-width: 1160px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.coaches-container{
+  padding: 0 5px;
 }
 
 
